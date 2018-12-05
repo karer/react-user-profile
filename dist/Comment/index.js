@@ -7,9 +7,9 @@ exports.default = exports.getFormattedTimestamp = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
 var _Photo = _interopRequireDefault(require("../Photo"));
+
+var _PropTypes = _interopRequireDefault(require("./PropTypes"));
 
 var _Wrapper = _interopRequireDefault(require("./Wrapper"));
 
@@ -45,12 +45,7 @@ var Comment = function Comment(_ref) {
   })), _react.default.createElement("div", null, _react.default.createElement("strong", null, userName), _react.default.createElement("br", null), content), _react.default.createElement(_Date.default, null, getFormattedTimestamp(createdAt)));
 };
 
-Comment.propTypes = {
-  photo: _propTypes.default.string.isRequired,
-  userName: _propTypes.default.string.isRequired,
-  content: _propTypes.default.string.isRequired,
-  createdAt: _propTypes.default.number.isRequired
-};
+Comment.propTypes = _PropTypes.default;
 var _default = Comment;
 exports.default = _default;
 //# sourceMappingURL=index.js.map

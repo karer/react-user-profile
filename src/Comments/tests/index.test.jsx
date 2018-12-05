@@ -25,7 +25,7 @@ describe('<Comments />', () => {
   });
 
   it('should render all specified comments', () => {
-    const comments = [1, 2, 3, 4].map(id => ({
+    const comments = ['a', 'b', 'c', 'd'].map(id => ({
       id,
       photo: '',
       userName: '',

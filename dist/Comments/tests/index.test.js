@@ -30,7 +30,7 @@ describe('<Comments />', function () {
     expect(wrapper.find(_Comment.default)).toHaveLength(0);
   });
   it('should render all specified comments', function () {
-    var comments = [1, 2, 3, 4].map(function (id) {
+    var comments = ['a', 'b', 'c', 'd'].map(function (id) {
       return {
         id: id,
         photo: '',

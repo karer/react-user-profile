@@ -19,7 +19,7 @@ export default class UserProfile extends Component {
     initialLikesCount: PropTypes.number,
     initialFollowingCount: PropTypes.number,
     initialFollowersCount: PropTypes.number,
-    initialComments: PropTypes.arrayOf(CommentPropTypes),
+    initialComments: PropTypes.arrayOf(PropTypes.shape(CommentPropTypes)),
   };
 
   static defaultProps = {

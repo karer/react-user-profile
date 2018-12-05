@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Photo from '../Photo';
 
+import CommentPropTypes from './PropTypes';
 import Wrapper from './Wrapper';
 import DateView from './Date';
 
@@ -36,11 +36,6 @@ const Comment = ({
   </Wrapper>
 );
 
-Comment.propTypes = {
-  photo: PropTypes.string.isRequired,
-  userName: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  createdAt: PropTypes.number.isRequired,
-};
+Comment.propTypes = CommentPropTypes;
 
 export default Comment;

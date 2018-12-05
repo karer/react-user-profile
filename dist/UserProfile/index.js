@@ -159,7 +159,7 @@ _defineProperty(UserProfile, "propTypes", {
   initialLikesCount: _propTypes.default.number,
   initialFollowingCount: _propTypes.default.number,
   initialFollowersCount: _propTypes.default.number,
-  initialComments: _propTypes.default.arrayOf(_PropTypes.default)
+  initialComments: _propTypes.default.arrayOf(_propTypes.default.shape(_PropTypes.default))
 });
 
 _defineProperty(UserProfile, "defaultProps", {
