@@ -6,7 +6,7 @@
   "author": "Kacper Geisheimer <kg@karermedia.pl>",
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean && babel ./src --out-dir ./dist --source-maps --copy-files",
+    "build": "npm run clean && babel ./src --out-dir ./dist --source-maps",
     "clean": "rimraf ./dist",
     "lint": "eslint --ext .jsx --ext .js src",
     "lint:fix": "npm run lint -- --fix",
